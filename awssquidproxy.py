@@ -81,7 +81,7 @@ def get_squid_conf(ip):
     _squidconf = [
         'acl aclname src ' + ip + '/32',
         'acl SSL_ports port 443',
-        'acl Safe_ports port 80',	
+        'acl Safe_ports port 80',
         'acl Safe_ports port 443',
         'acl CONNECT method CONNECT',
         'http_access deny !Safe_ports',
